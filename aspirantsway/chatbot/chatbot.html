@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang=en><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>UPSC aspirants chatbot for the CSE prep talk</title>
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<meta name="description" content="UPSC aspirants chatbot, you can ask anything and get reply instant" />
+<meta name="keywords" content="UPSC aspirants chatbox, upsc aspirants group chat website, upsc aspirants group, upsc cse aspirants chating group, aspirantsway.com chatbot" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/54fc2d1817.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="chatstyle.css">
+ <link rel="stylesheet" href="./chatmainstyle.css">
+ 
+
+</head> 
+<body>
+<div id="mainname">
+  <span class="mainname1">
+  <a href="../index.html">AspirantsWay</a>
+  </span> 
+  <span class="mainname2">Posted: All needs of UPSC aspirant
+  </span>
+</div>
+<div id="navbar">
+ <ul>
+   <li class=""><a href="../index.html">Home</a></li>
+   <li class=""><a href="../syllabus/decoded_syllabus.html">Decoded Syllabus</a></li>
+   <li class=""><a href="../strategy/detailed_strategy.html">Detailed Strategy</a></li>
+   <li class=""><a href="../notes/pre_and_mains_isoleted_notes.html">Pre and Mains Isolated Notes</a></li>
+   <li class=""><a href="../pyq/pyq_and_mcqs.html">PYQ And MCQs</a></li>
+   <li class=""><a href="../answers/designed_answers.html">Designed Answers</a></li>
+   <li class=""><a href="../problems/problems_solution.html">Problems Solution</a></li>
+   <li class=""><a href="../topperstalk/toppers_talk.html">Toppers Talk Blog + Videos</a></li>
+   <li class="active"><a href="../chatbot/chatbot.html">Chatbot</a></li>
+ </ul> 
+</div>
+
+<div id="main" class="main">
+ <div id="index">
+ <span style="font-weight: 400;"> समय तो चलेगा ...</span>
+ <span id="time_span"></span>
+ <span style="font-weight: 400;">...आपका पता नही !</span>
+  </div>
+
+  <div id="topspace"></div>
+  <div class="blogpostb" style="">
+    <p> नीचे दिया गया बार चैटबॉट का है जहां UPSC तैयारी संबंधी अनेक सवाल और उनके जवाब लिस्टेड है</p>
+    <p>चैटबॉट में दिए गए बटन्स के माध्यम से आप अपने सवाल के जवाब तक आसानी से पहुंच सकते हैं।</p>
+    <p>अगर आपको वांछित जवाब नहीं मिले तो आप अपना सवाल <b>ईमेल :</b> <span><a "href=mailto:aspirantsway1@gmail.com">aspirantsway1@gmail.com</a></span>
+      भी कर सकते हैं।</p>
+  </div>
+  <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!                           
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+
+                        <!-- Messages -->
+                        <div id="chatbox">
+                                                <span style="float: right;position: sticky;top:25px;z-index: 6;"><button style="background: yellowgreen;border-radius: 30px;font-weight: 700;border:2px solid #907ACD;"><a href="#chat-bar-bottom">&#x21d3;</a></button></span>
+
+                            <h5 class="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                         oninput="this.value = this.value.toLowerCase()"           placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;padding-top: 4px;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                              <button style="border-radius: 30px;padding:5px;border:1px solid gray;outline: none;color:#333;">  <i id="chat-icon" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                           </button> </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+  
+</div> <!-- main ka div -->
+ 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="chatresponses.js"></script>
+<script src="chatjs.js"></script>
+<script src="chatjsb.js"></script>
+
+</body>
+</html>
